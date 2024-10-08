@@ -1,0 +1,11 @@
+//Glow bit 7, bit 4, bit 3 and bit 1 LED's 
+void setup(){
+  volatile char *dir;
+  dir=0x30;
+  *dir=0xFF;
+}
+void loop(){
+volatile char *out;
+out=0x31;
+*out=0x9A;
+}
