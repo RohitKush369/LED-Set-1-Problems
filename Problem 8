@@ -1,0 +1,13 @@
+//Glow  all odd no LED's
+void setup(){
+  volatile char *dir;
+  dir=0x30;
+  *dir=0xFF;
+}
+void loop() {
+volatile char *out;
+  out=0x31;
+  *out=0x55;
+
+  
+}
